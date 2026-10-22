@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #e9f1f5; color: #584a3d; font-family: 'Playfair Display', Georgia, serif; text-align: center; }
+.intro { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px 16px; background: radial-gradient(circle at top, #fff 5%, #d9e9f4 80%); }
+.eyebrow { letter-spacing: 2px; text-transform: uppercase; font-size: 12px; color: #a88a55; }
+.envelope { position: relative; width: min(85vw, 340px); height: 220px; margin: 50px auto 30px; perspective: 900px; }
+.envelope-front { position: absolute; inset: 0; background: #bcd6e6; clip-path: polygon(0 0, 50% 52%, 100% 0, 100% 100%, 0 100%); border-radius: 8px; z-index: 3; }
+.flap { position: absolute; inset: 0; background: #d9eaf3; clip-path: polygon(0 0, 100% 0, 50% 54%); transform-origin: top; transition: transform 1s; z-index: 4; }
+.letter { position: absolute; left: 7%; top: 12%; width: 86%; height: 78%; padding: 35px 10px; background: #fffdf8; border: 1px solid #d5bc82; display: flex; flex-direction: column; gap: 12px; transition: transform 1s .5s; z-index: 2; }
+.letter strong { font-family: 'Great Vibes', cursive; font-size: 34px; color: #b18a45; }
+.seal { position: absolute; top: 43%; left: 50%; transform: translateX(-50%); width: 66px; height: 66px; border-radius: 50%; border: 3px double #f4dc9b; background: radial-gradient(circle, #d6b66c, #a47a35); color: white; font-family: Georgia, serif; font-size: 17px; z-index: 5; box-shadow: 0 4px 12px #7776; cursor: pointer; }
+.envelope.open .flap { transform: rotateX(180deg); z-index: 1; }
+.envelope.open .letter { transform: translateY(-115px); z-index: 5; }
+.envelope.open .seal { opacity: 0; pointer-events: none; }
+.hint { font-size: 13px; color: #7e8891; }
+.invitation { max-width: 620px; margin: auto; padding: 65px 25px; background: #fffaf2; border: 12px solid #e2edf3; }
+.invitation[hidden], .rsvp-panel[hidden] { display: none; }
+.flowers { color: #91b2c9; font-size: 38px; letter-spacing: 12px; }
+.quote { font-style: italic; line-height: 1.8; }
+h1 { font-family: 'Great Vibes', cursive; font-size: clamp(48px, 12vw, 78px); font-weight: normal; color: #a88542; margin: 25px 0; }
+h1 span { color: #88adc5; }
+h2 { color: #a88542; font-weight: normal; }
+.date { font-family: 'Great Vibes', cursive; font-size: 45px; color: #a88542; margin: 25px 0; }
+.invitation p { line-height: 1.9; }
+.event { margin: 45px 0; padding: 25px 12px; border-top: 1px solid #d9c39a; border-bottom: 1px solid #d9c39a; }
+.symbol { font-size: 34px; }
+a { color: #8a6c35; }
+.contact { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin: 20px; }
+.rsvp { border: none; border-radius: 30px; padding: 15px 25px; background: #b58c45; color: white; font-size: 16px; cursor: pointer; }
+.rsvp-panel { margin-top: 25px; padding: 20px; background: #eaf2f7; border-radius: 14px; }
+.rsvp-panel label { display: block; text-align: left; margin: 15px 0; }
+.rsvp-panel input, .rsvp-panel select { display: block; width: 100%; padding: 12px; margin-top: 7px; border: 1px solid #b9cbd6; border-radius: 8px; font-size: 16px; }
+.small { font-size: 12px; }
+
+.family-section {
+  margin: 35px auto;
+  padding: 25px 12px;
+  text-align: center;
+  border-top: 1px solid #d5bc82;
+  border-bottom: 1px solid #d5bc82;
+}
+
+.family-section p {
+  color: #839eae;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.family-section h3 {
+  color: #a88542;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 8px 0;
+}
+
+.family-ornament {
+  color: #c4a56b;
+  font-size: 30px;
+  margin: 20px 0;
+}
+
+
+.location-photo {
+  display: block;
+  width: 100%;
+  max-width: 470px;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 22px auto;
+  border: 4px solid #d5b574;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(90,70,40,0.15);
+}
+
+/* Bleu Floral & Gold */
+
+h1,
+.date,
+h2,
+.family-section h3 {
+  color: #88adc5;
+}
+
+h1 span,
+.family-ornament {
+  color: #b79a60;
+}
+
+.eyebrow,
+.event a,
+.contact a {
+  color: #779db8;
+}
+
+.rsvp {
+  background: #88adc5;
+  color: white;
+}
+
+.event {
+  border-color: #b8d3e3;
+}
+
+.family-section {
+  border-color: #b8d3e3;
+}
+
+.location-photo {
+  border-color: #b8d3e3;
+}
+
+.floral-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin: 10px auto 35px;
+  color: #91b2c9;
+}
+
+.floral-top span:first-child,
+.floral-top span:last-child {
+  color: #b7cbd8;
+  font-size: 42px;
+}
+
+.floral-top span:nth-child(2) {
+  font-size: 65px;
+  color: #88adc5;
+}
+
+/* Fundal floral cu acuarela bleu */
+
+.invitation {
+  background-image: url("https://i.ibb.co/ccwSW0v6/616-C0083-382-D-48-AF-AD6-B-9693-CB434496.png");
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #fffaf2;
+}
+
+/* Scris elegant, inspirat din invitatia originala */
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+.invitation {
+  color: #51463e;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 21px;
+}
+
+.invitation h1,
+.invitation .date,
+.invitation .family-section h3 {
+  font-family: 'Allura', cursive;
+  font-weight: normal;
+  color: #69532f;
+}
+
+.invitation h1 {
+  font-size: clamp(58px, 12vw, 85px);
+}
+
+.invitation h1 span {
+  color: #b08c47;
+}
+
+.invitation .date {
+  font-size: clamp(48px, 10vw, 70px);
+}
+
+.invitation .family-section h3 {
+  font-size: 31px;
+  line-height: 1.15;
+}
+
+.invitation h2 {
+  color: #86682f;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 34px;
+}
+
+.invitation .eyebrow,
+.invitation .family-section p,
+.invitation a {
+  color: #94753b;
+}
+
+.invitation .quote {
+  color: #51463e;
+  font-style: italic;
+}
+
+/* Numele parintilor si nasilor */
+
+.invitation .family-section h3 {
+  font-size: clamp(24px, 5.5vw, 30px);
+  line-height: 1.3;
+  margin: 12px 0;
+}
+
+.invitation .family-section p {
+  color: #594b3d;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Aranjarea primei pagini */
+
+.invitation .flowers {
+  margin-bottom: 5px;
+}
+
+.invitation .quote {
+  margin: 12px 0 18px;
+}
+
+.invitation h1 {
+  font-size: clamp(48px, 10vw, 65px);
+  line-height: 1;
+  margin: 15px 0;
+}
+
+.invitation .eyebrow {
+  margin: 12px 0;
+}
+
+.invitation .date {
+  font-size: clamp(42px, 9vw, 58px);
+  margin: 12px 0 20px;
+}
+.invitation {
+  padding-top: 25px;
+}
+
+.invitation .quote {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Flori discrete pentru pagina familiei */
+.family-section {
+  background-image: url("https://i.ibb.co/ccwSW0v6/616-C0083-382-D-48-AF-AD6-B-9693-CB434496.png");
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 12px;
+  padding: 45px 15px;
+}
+
+/* Fundal floral pentru restul invitației */
+
+  .family-section {
+  background-image: url("https://i.ibb.co/gFhhbqF9/A3590-E29-4309-4381-B9-DD-C340072-E5-B41.png");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+}
+
+/* Prima pagină rămâne neschimbată */
+
+
+/* Fundal floral pentru restul invitației */
+.invitation-rest {
+  background-image: url("https://i.ibb.co/gFhhbqF9/A3590-E29-4309-4381-B9-DD-C340072-E5-B41.png");
+  background-position: center top;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 20px 25px 45px;
+}
+
+/* Eliminăm imaginea separată de la părinți */
+.family-section {
+  background-image: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Florile ajung până la baza invitației */
+.invitation {
+  padding-bottom: 0;
+}
+
+.invitation-rest {
+  padding-bottom: 45px;
+}
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nunta Diana & Daniel</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <section id="intro" class="intro">
+      <p class="eyebrow">O invitație specială pentru tine</p>
+      <div class="envelope" id="envelope">
+        <div class="letter">
+          <span>Cu drag,</span>
+          <strong>Diana & Daniel</strong>
+        </div>
+        <div class="flap"></div>
+        <div class="envelope-front"></div>
+        <button id="seal" class="seal" aria-label="Deschide invitația">D&D</button>
+      </div>
+      <p class="hint">Atinge sigiliul pentru a deschide invitația</p>
+    </section>
+
+    <section id="invitation" class="invitation" hidden>
+      
+
+      <p class="quote">Până acum am fost doar EU<br>De acum înainte vom fi NOI</p>
+      <h1>Diana <span>&</span> Daniel</h1>
+      <p class="eyebrow">Ne căsătorim!</p>
+      <div class="date">31 Iulie 2027</div>
+      <p>Cu binecuvântarea părinților și alături de nașii noștri, vă invităm să ne fiți alături la cel mai important eveniment din viața noastră.</p>
+      
+
+<div class="invitation-rest">
+      <div class="family-section">
+  <p>Cu dragoste, alături de părinții noștri</p>
+  <h3>Alina și Constantin Cojocaru</h3>
+  <h3>Daniela Bogonos</h3>
+
+  <div class="family-ornament">❦</div>
+
+  <p>Și de nașii noștri dragi</p>
+  <h3>Corina și George Bucătariu</h3>
+  <h3>Georgiana și Alin Pintican</h3>
+  <h3>Melania și Mihail Iov</h3>
+  <h3>Daniela și Darius Crețu</h3>
+</div>
+
+      <div class="event">
+        <div class="symbol">⛪</div>
+        <h2>Cununia religioasă</h2>
+        <p>Parohia „Înălțarea Domnului”</p>
+        <p>Podoleni • Ora 14:00</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Parohia+Inaltarea+Domnului+Podoleni" target="_blank">Vezi pe hartă ↗</a>
+<img
+  class="location-photo"
+  src="https://i.ibb.co/JW6ZBkYC/IMG-6225.jpg"
+  alt="Biserica Înălțarea Domnului"
+>
+
+      </div>
+
+      <div class="event">
+        <div class="symbol">🥂</div>
+        <h2>Petrecerea</h2>
+        <p>Restaurantul Calypso</p>
+        <p>Ora 19:00</p>
+        
+<a
+  href="https://www.google.com/maps/search/?api=1&amp;query=Calypso+Salon+Evenimente+Strada+Izvoare+616+Dumbrava+Rosie"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  📍 Vezi locația restaurantului
+</a>
+
+<img
+  class="location-photo"
+  src="https://i.ibb.co/6JLMW4rM/IMG-6227.jpg"
+  alt="Calypso Salon Evenimente"
+>
+
+      </div>
+
+      <h2>Vă așteptăm cu drag!</h2>
+      <p>Vă rugăm să confirmați prezența până la 1 iunie 2027.</p>
+      <div class="contact">
+        <a href="tel:+40790261021">Sună Diana</a>
+        <a href="tel:+40730487645">Sună Daniel</a>
+      </div>
+      <button id="rsvpButton" class="rsvp">Confirmă participarea</button>
+      <div id="rsvpPanel" class="rsvp-panel" hidden>
+        <h2>Confirmare participare</h2>
+        <label>Numele tău <input id="guestName" placeholder="Nume și prenume"></label>
+        <label>Vei participa?
+          <select id="attendance">
+            <option value="Da">Da, cu drag!</option>
+            <option value="Nu">Din păcate, nu</option>
+          </select>
+        </label>
+        <label>Număr persoane <input id="guestCount" type="number" min="1" value="1"></label>
+        <label>Cui trimiți confirmarea?
+  <select id="recipient">
+    <option value="Diana">Diana</option>
+    <option value="Daniel">Daniel</option>
+  </select>
+</label>
+        <button id="sendRsvp" class="rsvp">Pregătește confirmarea</button>
+        <p class="small">Alege cui dorești să trimiți confirmarea prin WhatsApp: Diana sau Daniel.</p>
+      </div>
+  </div>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
